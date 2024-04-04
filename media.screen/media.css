@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap");
+
+@media only screen and (max-width: 780px) {
+  /*     
+  body {
+    overflow: hidden;
+  } */
+
+  /* .continer {
+    overflow: hidden;
+  } */
+
+  /* ---- Navbar style Start ----- */
+
+  nav {
+    flex-direction: column;
+    gap: 0;
+    top: -1px;
+    align-items: start;
+    justify-content: center;
+  }
+
+  nav .left-nav .right-nav,
+  ul {
+    display: none;
+  }
+
+  nav .burger {
+    cursor: pointer;
+    margin-left: 2em;
+    padding: 5px;
+    transition: 1s;
+  }
+
+  .burger {
+    display: block;
+    border-radius: 10px;
+    z-index: 99;
+    background-color: #fff;
+  }
+
+  nav .burger div {
+    height: 3px;
+    width: 30px;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    margin: 5px;
+    transition: 0.2s linear;
+  }
+
+  nav .burger .line2 {
+    width: 20px;
+  }
+
+  nav > ul {
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    background-color: #313134e4;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    top: -2px;
+    width: 100%;
+    color: #fff;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    transform: translateY(-100%);
+    transition: 0.5s;
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    font-optical-sizing: auto;
+  }
+
+  nav > ul a {
+    color: #fff;
+  }
+
+  .animNav {
+    background-color: black;
+  }
+
+  .logo img {
+    font-size: 0;
+    width: 90px;
+  }
+
+  .logo button {
+    font-size: 70%;
+  }
+
+  .logo {
+    flex-direction: row;
+    gap: 1.5em;
+    right: 20px;
+    position: absolute;
+  }
+
+  /* ---- Navbar style End ----- */
+
+  /* ---- Section one style Start ----- */
+
+  section {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .big-title img {
+    width: 140%;
+  }
+
+  section .big-title h1 {
+    font-size: 60px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section .big-title p {
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  /* ---- Section one style End ----- */
+
+  /* ---- Section two style End ----- */
+
+  .boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .title p {
+    width: 90%;
+    text-align: center;
+  }
+
+  /* ---- Section two style End ----- */
+
+  /* ---- Section three style Start ----- */
+
+  main .people {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-top: 5em;
+  }
+
+  main .title-2 p {
+    width: 330px;
+  }
+
+  .people,
+  .perosn {
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .people .perosn,
+  h3 {
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 80%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ---- Section three style End ----- */
+
+  /* ---- Section four style Start ----- */
+
+  main .people-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 3em;
+  }
+
+  .people-2 .perosn-2,
+  h3 {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  /* ---- Section four style End ----- */
+
+  /* ---- Section five style Start ----- */
+
+  .testimonials {
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+  }
+
+  .box-comment {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    margin-top: 3em;
+  }
+
+  .user-comment {
+    background-color: #e1bcfa;
+    padding: 20px;
+    width: 150px;
+    height: 130px;
+    border-radius: 20px;
+    border: 1px solid #d6bcfa;
+  }
+
+  .box-comment .user-comment img {
+    width: 30px;
+    border-radius: 15px;
+  }
+
+  .user-comment .user p {
+    font-weight: 500;
+    color: #000;
+    font-size: 9px;
+  }
+
+  .user-comment .user p a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 7px;
+  }
+
+  .box-comment .comments {
+    margin-top: 10px;
+  }
+
+  .box-comment .comments p {
+    font-size: 7px;
+  }
+
+  #none {
+    display: none;
+  }
+
+  /* ---- Section five style End ----- */
+
+  /* ---- Section six style Start ----- */
+
+  aside {
+    height: 400px;
+  }
+
+  aside h1 {
+    font-size: 30px;
+  }
+
+  aside p {
+    width: 100%;
+  }
+
+  /* ---- Section six style End ----- */
+
+  /* ---- Footer style Style ----- */
+  footer {
+    width: 100%;
+  }
+
+  footer img {
+    margin-left: 20px;
+  }
+
+  footer .foot a {
+    display: none;
+  }
+  /* ---- Footer style Style ----- */
+}

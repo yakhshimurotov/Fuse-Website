@@ -1,0 +1,481 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: 0.5s ease;
+    background-color: aliceblue;
+}
+
+.continer {
+    width: 95%;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 20px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 20px;
+  }
+
+/* ---- Navbar style Start ----- */
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00000014;
+    backdrop-filter: blur(50px);
+    height: 76px;
+    width: 100%;
+    /* border-bottom: 1px solid #f8c9ff; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav, .left-nav, .right-nav, ul {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+nav > ul {
+    display: none;
+    background-color: none;
+}
+
+.burger {
+    display: none;
+}
+
+.left-nav, 
+.right-nav,
+ ul
+ li 
+ a {
+    position: relative;
+    text-decoration: none;
+    color: #777;
+    transition: 0.3s;
+}
+
+.right-nav
+ ul
+ li {
+    cursor: pointer;
+ }
+
+.right-nav
+ ul
+ li 
+ i {
+    font-size: 13px;
+    margin: 5px;
+    transition: 0.5s ease;
+ }
+
+nav .card {
+    position: absolute;
+    right: 10%;
+    top: 60px;
+    filter: blur(10px);
+    height: 200px;
+    width: 170px;
+    border-radius: 15px;
+    background-color: #d6bcfaee;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.3s ease;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 2em;
+}
+
+.logo button {
+    padding: 10px;
+    height: 100%;
+    background: #fcfcfc;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+
+/* ---- Navbar style End ----- */
+
+/* ---- Section one style Start ----- */
+
+section {
+    display: flex;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-image: url(/imgs/Background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.big-title img {
+    width: 900px;
+}
+
+.big-title {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+
+section .big-title h1 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Syne", sans-serif;
+    margin-bottom: 0.5em;
+}
+
+section .big-title p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 700px;
+}
+
+section button {
+    background-color: #532C59;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 3em;
+    font-family: "Syne", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.5s ease;
+    border: none;
+}
+
+section button:hover {
+    background-color: #804a89;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.logos img {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ---- Section one style End ----- */
+
+/* ---- Section two style Start ----- */
+
+main {
+    margin-bottom: 7em;
+}
+
+.boxs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+.title h1 {
+    font-family: "Syne", sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.title p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+    width: 600px;
+    margin: 0 auto;
+    color: #532C59;
+    margin-bottom: 3em;
+}
+
+.boxs .box1, h1 > p {
+    text-align: center;
+}
+
+.boxs .box1 img {
+    width: 312px;
+}
+
+.boxs .box1 h1 {
+    font-family: "Syne", sans-serif;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.boxs .box1 p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* ---- Section two style End ----- */
+
+/* ---- Section three style Start ----- */
+
+main .title-2 {
+    text-align: center;
+}
+
+main .title-2 h1 {
+    font-family: "Syne", sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+main .title-2 p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+main .people {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+main .people, .perosn {
+    text-align: center;
+}
+
+.people .perosn, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+
+.people .perosn, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* ---- Section three style End ----- */
+
+/* ---- Section four style Start ----- */
+
+main .people-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+main .people-2, .person-2 {
+    text-align: center;
+}
+
+.people-2 .person-2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.people-2 .person-2 p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* ---- Section four style End ----- */
+
+/* ---- Section five style Start ----- */
+
+.testimonials {
+    width: 1300px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.testimonials h1 {
+    text-align: center;
+    font-family: "Syne", sans-serif;
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.box-comment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    margin-top: 3em;
+}
+
+.user-comment {
+    background-color: #e1bcfa;
+    padding: 20px;
+    width: 420px;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid #D6BCFA;
+}
+
+.user-comment > .user {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.user-comment .user p {
+    font-weight: 500;
+    color: #000;
+}
+
+.user-comment .user p a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.box-comment .user-comment img {
+    width: 40px;
+    border-radius: 15px;
+}
+
+.box-comment .comments {
+    margin-top: 1em;
+}
+
+.box-comment .comments p {
+   font-weight: 400;
+   color: #532C59;
+}
+
+/* ---- Section five style End ----- */
+
+/* ---- Section six style Start ----- */
+
+aside {
+    margin-bottom: 10em;
+    text-align: center;
+} 
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5em;
+    border:  1px solid #D6BCFA;
+    border-radius: 30px;
+    background-color: #f8e0fa23;
+}
+
+aside h1 {
+    font-family: "Syne", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+aside p {
+    font-weight: 400;
+    color: #532C59;
+    width: 700px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+aside button {
+    margin-top: 20px;
+    width: 156px;
+    height: 52px;
+    border: none;
+    font-family: "Syne", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #532C59;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+aside button:hover {
+    background-color: #804a89;
+}
+
+/* ---- Section six style End ----- */
+
+/* ---- Footer style Style ----- */
+
+footer {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #777;
+}
+
+footer .foot a {
+    margin-right: 1em;
+    text-decoration: none;
+    font-family:  "Syne", sans-serif;
+    color: #777;
+}
+
+footer img {
+    margin-right: 2em;
+    width: 70px;
+    height: 70px;
+}
+
+.copy p {
+    font-family:  "Syne", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin: 2em;
+}
+
+/* ---- Footer style End ----- */
